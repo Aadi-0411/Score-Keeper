@@ -4,22 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Score Keeper</title>
-
-    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <style>
+        .winner{
+          color:green;
+        }
+        .loser{
+          color: red;
+        }
+    </style>
   </head>
   <body>
     <h1><span id="p1Score">0</span> to <span id="p2Score">0</span></h1>
     
-    <select id="playTo">
-      <option value="3">3</option>
-      <option value="4">4</option>
-      <option value="5">5</option>
-      <option value="6">6</option>
-      <option value="7">7</option>
-    </select>
-    <button id="p1Button">+1 Player One</button>
-    <button id="p2Button">+1 Player Two</button>
-    <button id="reset">Reset</button>
+
+    <div class="card">
+      <div class="card-footer">
+        <div class="select card-footer-item">
+          <select id="playTo" class="">
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+          </select>
+          </div>
+          <button id="p1Button" class="button is-small card-footer-item">+1 Player One</button>
+          <button id="p2Button" class="button is-small card-footer-item">+1 Player Two</button>
+          <button id="reset" class="button is-small card-footer-item">Reset</button>
+      </div>
+      
+    </div>
+    
     <script src="app.js"></script>
   </body>
 </html>
